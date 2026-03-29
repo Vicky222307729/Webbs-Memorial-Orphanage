@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webbs Memorial Orphanage</title>
+    <meta
+      name="description"
+      content="Webbs Memorial Orphanage is a caring children's home that provides shelter, education, health support, and hope for every child."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">Webbs Memorial Orphanage</div>
+        <div class="nav-links">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#programs">Programs</a>
+          <a class="nav-link" href="#donate">Donate</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link admin-link" href="/admin.html">Admin</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Children's Home</p>
+        <h1 id="site-title">Webbs Memorial Orphanage</h1>
+        <p id="tagline" class="tagline"></p>
+        <div class="hero-actions">
+          <a class="button primary" href="#donate">Support Our Home</a>
+          <a class="button secondary" href="#about">Learn More</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="stats" id="stats"></section>
+
+      <section class="section about" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About Us</p>
+          <h2>A loving place for care, growth, and opportunity</h2>
+        </div>
+        <p id="about-text" class="about-text"></p>
+      </section>
+
+      <section class="section programs" id="programs">
+        <div class="section-heading">
+          <p class="eyebrow">What We Do</p>
+          <h2>Our core areas of support</h2>
+        </div>
+        <div id="program-list" class="program-grid"></div>
+      </section>
+
+      <section class="section donate" id="donate">
+        <div class="section-heading">
+          <p class="eyebrow">Donate</p>
+          <h2 id="donation-heading"></h2>
+        </div>
+        <p id="donation-intro" class="about-text"></p>
+        <div id="donation-methods" class="program-grid"></div>
+        <div id="bank-details" class="bank-card"></div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>Moments from our home</h2>
+        </div>
+        <div id="gallery-list" class="gallery-grid"></div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Support our mission and connect with us</h2>
+        </div>
+        <div class="contact-layout">
+          <div id="contact-card" class="contact-card"></div>
+          <form id="contact-form" class="contact-form">
+            <h3>Send us a message</h3>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" placeholder="How would you like to help?" />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Write your message here"
+                required
+              ></textarea>
+            </label>
+            <button class="button primary submit-button" type="submit">Submit Message</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Webbs Memorial Orphanage. All rights reserved.</p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
